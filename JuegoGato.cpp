@@ -45,7 +45,7 @@ bool JuegoGato::verificar_Ganador(char jugador){
     // Se verifican las diagonales
     if((tablero[0][0] == jugador && tablero[1][1] == jugador && tablero[2][2] == jugador) ||
        (tablero[0][2] == jugador && tablero[1][1] == jugador && tablero[2][0] == jugador)) {
-        return true; // Retorna verdadero si el jugador relleno las diagonal completas
+        return true; // Retorna verdadero si el jugador relleno las diagonales completas
     }
     return false; // Si no se cumple ninguna condición de victoria, retorna false
 }
